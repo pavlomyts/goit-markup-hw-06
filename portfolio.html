@@ -340,17 +340,24 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-us">
+
+        <div>
           <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
-          <form action="">
+          <form class="form-email-footer" action="">
             <label for="">
               <input
                 class="footer-form"
                 type="email"
-                name="email"
+                name="E-mail"
                 placeholder="E-mail"
+                required
               />
-              <button class="button-footer">Подписаться</button>
+              <button class="button-footer">
+                Подписаться
+                <svg class="footer-send-item" width="24" height="24px">
+                  <use href="./images/svg/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
             </label>
           </form>
         </div>
