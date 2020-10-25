@@ -702,3 +702,15 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
+.form-field {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+}
+/* .modal-form-container {
+  
+} */
