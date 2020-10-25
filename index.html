@@ -63,6 +63,7 @@
         </ul>
       </div>
     </header>
+
     <!--main section-->
     <main>
       <!--main background -->
@@ -387,6 +388,7 @@
         </div>
       </section>
     </main>
+
     <!--footer section-->
     <footer class="footer">
       <div class="conteiner footer-container">
@@ -455,8 +457,31 @@
             </li>
           </ul>
         </div>
+
+        <div>
+          <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
+          <form class="form-email-footer" action="">
+            <label for="">
+              <input
+                class="footer-form"
+                type="email"
+                name="E-mail"
+                placeholder="E-mail"
+                required
+              />
+              <button class="button-footer">
+                Подписаться
+                <svg class="footer-send-item" width="24" height="24px">
+                  <use href="./images/svg/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
