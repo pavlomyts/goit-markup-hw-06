@@ -513,8 +513,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-left: 32px;
-  padding-right: 32px; */
   padding-top: 16px;
 }
 .social-item {
@@ -539,11 +537,6 @@ img {
   fill: #afb1b8;
 }
 
-/* .social-item-svg {
-  height: 20px;
-  width: ;
-} */
-
 .profession-list {
   font-weight: 400;
   font-size: 16px;
@@ -553,7 +546,7 @@ img {
   text-align: center;
   margin-top: 10px;
 }
-/* PORTFOLIO */
+/* !!!!!!!!!!!!PORTFOLIO !!!!!!!!!!!!!!!!!!!!*/
 
 .button-list-menu {
   display: flex;
@@ -725,7 +718,7 @@ img {
   letter-spacing: 0.01em;
   color: #757575;
 }
-/* .modal-form-container {
+/* !!!!!!!!!!!!!!.modal-form-container !!!!!!!!!!!!!!!!!!!!!{
   
  */
 .input {
