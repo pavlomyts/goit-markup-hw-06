@@ -483,25 +483,71 @@
 
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-          <svg width="11px" height="11px">
-            <use href="./images/svg/sprite.svg#icon-vector"></use>
-          </svg>
-        </button>
-        <form class="modal-form-container" action="">
-          <h4>Оставьте свои данные, мы вам перезвоним</h4>
-          <label for="" class="form-field">
-            <span class="form-label">Имя</span>
-            <input type="text" name="name" />
-          </label>
-          <label for="">
-            <input type="tel" name="telephone" />
-          </label>
-          <label for="">
-            <input type="email" name="email" />
-          </label>
-        </form>
+      <div class="modal-form">
+        <div class="modal">
+          <button type="button" class="close-button-modal" data-modal-close>
+            <svg width="11px" height="11px">
+              <use href="./images/svg/sprite.svg#icon-vector"></use>
+            </svg>
+          </button>
+          <form class="modal-form-container" action="">
+            <h4 class="form-title">Оставьте свои данные, мы вам перезвоним</h4>
+            <label class="form-field">
+              <span class="form-label">Имя</span>
+
+              <input class="input" type="text" name="name" />
+              <span class="modal-svg">
+                <svg>
+                  <use href="./images/svg/sprite.svg#vector-name"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-field" for="">
+              <span class="form-label">Телефон</span>
+              <input class="input" type="tel" name="telephone" />
+              <span class="modal-svg">
+                <svg>
+                  <use href="./images/svg/sprite.svg#vector-phone"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-field" for="">
+              <span class="form-label">Почта</span>
+              <input class="input" type="email" name="email" />
+              <span class="modal-svg">
+                <svg>
+                  <use href="./images/svg/sprite.svg#vector-mail"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="form-field" for="">
+              <span class="form-label">Комментарий</span>
+              <textarea
+                class="textarea-input"
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+
+            <input
+              class="visualy-hidden modal-policy"
+              type="checkbox"
+              name="user-policy"
+              value="accept-policy"
+              id="checkbox-policy"
+            />
+            <label for="checkbox-policy" class="modal-form-policy">
+              <span class="form-policy-confirm"
+                >Соглашаюсь с рассылкой и принимаю
+              </span>
+              <a class="form-confrim-label link" href="">Условия договора</a>
+            </label>
+            <button type="submit" class="button-modal">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
