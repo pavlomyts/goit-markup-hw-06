@@ -742,7 +742,10 @@ img {
   padding: 12px;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--body-main-font);
+  font-size: 14px;
 }
+
 .input:focus,
 .textarea-input:focus {
   outline: none;
@@ -777,7 +780,16 @@ img {
   height: 120px;
   padding: 12px 16px;
   resize: none;
+  font-family: var(--body-main-font);
 }
+.textarea-input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-svg {
   width: 18px;
   height: 18px;
