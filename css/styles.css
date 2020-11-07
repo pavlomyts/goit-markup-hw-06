@@ -143,7 +143,8 @@ img {
   color: var(--accent-color);
 }
 
-.header-tel-link:hover {
+.header-tel-link:hover,
+.header-tel-link:focus {
   color: #2196f3;
 }
 .header-tel-link:hover .icon-header {
@@ -539,10 +540,12 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-item:hover {
+.social-item:hover,
+.social-item:focus {
   background-color: #2196f3;
 }
-.social-item:hover .social-item-svg {
+.social-item:hover,
+.social-item:focus .social-item-svg {
   fill: #ffffff;
 }
 .social-item-svg {
