@@ -46,7 +46,9 @@ img {
 .navigation-list-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.navigation-list-item-contact {
+  margin-right: 30px;
+}
 .contact-list {
   display: flex;
   margin-left: auto;
@@ -61,7 +63,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--header-logo);
 }
-.contact-list .navigation-list-item {
+.contact-list {
   margin-right: 30px;
 }
 .header-flex-conteiner {
@@ -100,14 +102,7 @@ img {
 .navigation-list-item {
   position: relative;
 }
-.active {
-  color: #2196f3;
-}
-.navigation-list-link:hover::after {
-  opacity: 1;
-}
-
-.navigation-list-link::after {
+.navigation-list-item::after {
   content: "";
   position: absolute;
   display: block;
@@ -115,12 +110,29 @@ img {
   height: 4px;
   bottom: -31px;
   background-color: #2196f3;
-  /* bottom: -31px; */
+
   border-radius: 4px;
   opacity: 0;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.active {
+  color: #2196f3;
+}
+.active::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  bottom: -31px;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+.navigation-list-item:hover::after {
+  opacity: 1;
+}
+
 .navigation-list-link:hover::after .icon-header {
   fill: #757575;
   margin-right: 10px;
@@ -155,6 +167,8 @@ img {
   background-color: #2f303a;
   background-size: cover;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .conteiner-hero {
   margin-right: auto;
@@ -788,15 +802,20 @@ img {
   content: "";
   width: 16px;
   height: 15px;
-  outline: 1px solid #212121;
+  border: 2px solid #212121;
   margin-right: 8px;
+  border-radius: 3px;
 }
-
+.modal-form-policy {
+  margin-left: 10px;
+  margin-top: 12px;
+}
 .modal-policy:checked + .modal-form-policy::before {
   background-color: var(--accent-color);
   background-position: center;
   background-image: url(../images/svg/confrim-policy.svg);
   background-repeat: no-repeat;
+  border: none;
 }
 .form-policy-confirm {
   font-family: var(--body-main-font);
